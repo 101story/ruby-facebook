@@ -1,0 +1,7 @@
+<h1>Facebooks Board</h1>
+
+<% @posts.each do |post| %>
+    <p><%= post.id %> 번째글 | <%=link_to("#{post.title}", post_path(post.id))%></p><!--"/posts/#{post.id}"-->
+<% end %>
+
+<%=link_to("게시물 쓰기", new_post_path) %>

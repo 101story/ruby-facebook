@@ -1,0 +1,6 @@
+<h1>Posts#show</h1>
+<p><%=@post.title%></p>
+<p><%=@post.content%></p>
+
+<%=link_to "수정", edit_post_path(@post.id)%>
+<%=link_to "삭제", post_path(@post.id), method:"delete", data:{confirm:"진짜 지울꺼임?"}%>
