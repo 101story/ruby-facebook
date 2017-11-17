@@ -11,3 +11,5 @@
 
 * 모든 form 은 form_tag
 * 모든 link 는 link_to
+
+* ruby environment variable (추가하기)
